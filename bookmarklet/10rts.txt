@@ -1,0 +1,1 @@
+javascript:(function()%7Bvar%20a%3D%5B%22from%3A%22%2Bwindow.location.pathname.match(%2F%5C%2F(%5B0-9a-zA-Z_%5D%2B)%2F)%5B1%5D%2C%22filter%3Aimages%22%2C%22min_retweets%3A10%22%5D%3Ba%3D%22https%3A%2F%2Ftwitter.com%2Fsearch%3F%22%2B%5B%22q%3D%22%2BencodeURIComponent(a.join(%22%20%22))%2C%22f%3Dlive%22%5D.join(%22%26%22)%3Bwindow.open(a)%7D)()%3Bvoid(0);

@@ -1,0 +1,1 @@
+javascript:(function()%7Bvar a%3D%5B"from%3A"%2Bwindow.location.pathname.match(%2F%5C%2F(%5B0-9a-zA-Z_%5D%2B)%2F)%5B1%5D%2C"filter%3Aimages"%5D%3Ba%3D"https%3A%2F%2Ftwitter.com%2Fsearch%3F"%2B%5B"q%3D"%2BencodeURIComponent(a.join(" "))%2C"f%3Dlive"%5D.join("%26")%3Bwindow.open(a)%7D)()%3Bvoid(0);
