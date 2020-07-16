@@ -11,7 +11,7 @@
     }
 
     function integrateElements(){
-        var parts = document.getElementsByClassName('css-901oao r-hkyrab r-1tl8opc r-1blvdjr r-16dba41 r-ad9z0x r-bcqeeo r-bnwqim r-qvutc0');
+        var parts = document.getElementsByClassName('css-901oao r-16dba41 r-ad9z0x r-bcqeeo r-bnwqim r-qvutc0');
         if (parts.length == 0) {
             return;
         }
