@@ -1,4 +1,23 @@
 (function(){
+    function removeFrontLayer(){
+        var layers = document.getElementById("layers");
+        layers.parentNode.removeChild(layers);
+    }
+
+    function removeHeader(){
+        var main = document.getElementsByTagName("main")[0];
+        for (let i = main.parentNode.childElementCount - 1; i >= 0; i--) {
+            if (main.parentNode.children[i] != main) {
+                main.parentNode.removeChild(main.parentNode.children[i]);
+            }
+        }
+    }
+
+    function removeSidebar(){
+        var sidebar = document.querySelector('[data-testid="sidebarColumn"]');
+        sidebar.parentNode.removeChild(sidebar);
+    }
+
     function restoreOriginalImage(){
         var part = document.getElementById("react-root");
         part.innerHTML = part.innerHTML.replace(/name=[a-zA-Z0-9]+/gi, "name=orig");
@@ -28,9 +47,12 @@
         document.title = document.title.replace(/ 「[\s\S^」]*」/gi, "");
     }
 
+    removeFrontLayer();
+    removeHeader();
+    removeSidebar();
+    removeElements('css-1dbjc4n r-aqfbo4 r-14lw9ot r-my5ep6 r-rull8r r-qklmqi r-gtdqiz r-ipm5af r-1g40b8q'); // tweet header
     restoreOriginalImage();
     removeHashtag();
-    removeElements('css-1dbjc4n r-aqfbo4 r-1joea0r r-zso239 r-1hycxz'); // sidebar
     removeElements('css-1dbjc4n r-1loqt21 r-18u37iz r-1ny4l3l r-o7ynqc r-6416eg'); // reply
     removeElements('css-1dbjc4n r-1iusvr4 r-16y2uox r-1777fci r-1mi0q7o');  // private reply
     removeElements('css-18t94o4 css-1dbjc4n r-1ny4l3l r-1j3t67a r-o7ynqc r-6416eg'); // omitted reply

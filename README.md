@@ -15,6 +15,6 @@ Twitterに関する自作ブックマークレット用のソースコード
 投稿者の画像つきツイート一覧の内、リツイートが10以上のものを表示
 
 # 使い方
-1. [Google Closure Compiler](https://closure-compiler.appspot.com/home)でコンパイル
+1. [JavaScript / Css 圧縮・軽量化（Minify）](https://rakko.tools/tools/33/)でコンパイル
 2. [Bookmarklet スクリプト変換](https://ytyng.github.io/bookmarklet-script-compress/)でブックマークレット作成
 3. ツイートページで実行
