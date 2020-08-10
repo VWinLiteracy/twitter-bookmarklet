@@ -22,6 +22,11 @@
         var part = document.getElementById("react-root");
         part.innerHTML = part.innerHTML.replace(/name=[a-zA-Z0-9]+/gi, "name=orig");
         part.innerHTML = part.innerHTML.replace(/<a href="\/[a-zA-Z0-9_]+\/status\/[0-9]+\/photo\/[1-4]"[^>]+>/gi, "");
+        var images = document.querySelectorAll('[data-testid="tweetPhoto"]');
+        if (images.length == 4) {
+            images[0].parentElement.parentElement.insertBefore(images[2].parentElement, null);
+            images[3].parentElement.parentElement.insertBefore(images[1].parentElement, images[3].parentElement);
+        }
     }
 
     function removeHashtag(){
