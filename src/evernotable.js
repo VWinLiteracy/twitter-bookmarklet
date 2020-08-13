@@ -56,13 +56,13 @@
     removeHeader();
     removeSidebar();
     removeElements('css-1dbjc4n r-aqfbo4 r-14lw9ot r-my5ep6 r-rull8r r-qklmqi r-gtdqiz r-ipm5af r-1g40b8q'); // tweet header
-    restoreOriginalImage();
-    removeHashtag();
     removeElements('css-1dbjc4n r-1loqt21 r-18u37iz r-1ny4l3l r-o7ynqc r-6416eg'); // reply
     removeElements('css-1dbjc4n r-1iusvr4 r-16y2uox r-1777fci r-1mi0q7o');  // private reply
     removeElements('css-18t94o4 css-1dbjc4n r-1ny4l3l r-1j3t67a r-o7ynqc r-6416eg'); // omitted reply
     removeElements('css-1dbjc4n r-18u37iz r-d0pm55'); // user link
     removeElements('css-1dbjc4n r-xoduu5 r-1mlwlqe r-1d2f490 r-1udh08x r-u8s1d r-h9hxbl r-417010'); // emoji
+    restoreOriginalImage();
+    removeHashtag();
     compressTitle(); // omit part of title between "「」"
     integrateElements(); // tweet text into element of image
 })();
