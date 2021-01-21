@@ -57,7 +57,7 @@
     removeFrontLayer();
     removeHeader();
     removeSidebar();
-    removeElements('css-1dbjc4n r-aqfbo4 r-14lw9ot r-j7yic r-rull8r r-qklmqi r-gtdqiz r-ipm5af r-1g40b8q'); // tweet header
+    removeElements('css-1dbjc4n r-aqfbo4 r-14lw9ot r-j7yic r-rull8r r-qklmqi r-gtdqiz r-1gn8etr r-1g40b8q'); // tweet header
     removeElements('css-1dbjc4n r-9x6qib r-1867qdf r-rs99b7 r-1loqt21 r-dap0kf r-1ny4l3l r-1udh08x r-o7ynqc r-6416eg'); // include tweet
     removeElements('css-1dbjc4n r-1loqt21 r-18u37iz r-1ny4l3l r-o7ynqc r-6416eg'); // reply
     removeElements('css-1dbjc4n r-1iusvr4 r-16y2uox r-1777fci r-1mi0q7o');  // private reply
