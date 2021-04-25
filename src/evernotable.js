@@ -37,7 +37,7 @@
     }
 
     function integrateElements(){
-        var parts = document.getElementsByClassName('css-901oao css-16my406 r-1tl8opc r-bcqeeo r-qvutc0');
+        var parts = document.getElementsByClassName('css-901oao r-18jsvk2 r-1blvdjr r-16dba41 r-vrz42v r-bcqeeo r-bnwqim r-qvutc0');
         if (parts.length == 0) {
             return;
         }
@@ -62,7 +62,7 @@
     removeElements('css-1dbjc4n r-1loqt21 r-18u37iz r-1ny4l3l r-o7ynqc r-6416eg'); // reply
     removeElements('css-1dbjc4n r-1iusvr4 r-16y2uox r-1777fci r-1mi0q7o');  // private reply
     removeElements('css-18t94o4 css-1dbjc4n r-1ny4l3l r-1j3t67a r-o7ynqc r-6416eg'); // omitted reply
-    removeElements('css-1dbjc4n r-1awozwy r-zv2cs0 r-1867qdf r-18u37iz r-ku1wi2 r-156q2ks r-1yt7n81 r-9qu9m4'); // reply restricted tweet
+    removeElements('css-1dbjc4n r-1ihkh82 r-1gm7m50 r-1867qdf r-1phboty r-rs99b7 r-18u37iz r-16y2uox r-1wtj0ep r-s1qlax r-1f1sjgu'); // reply restricted tweet
     removeElements('css-18t94o4 css-1dbjc4n r-16y2uox r-19u6a5r r-1ny4l3l r-m2pi6t r-oyd9sg r-o7ynqc r-6416eg'); // show reply
     removeElements('css-1dbjc4n r-18u37iz r-15zivkp'); // user link
     removeElements('css-1dbjc4n r-xoduu5 r-1mlwlqe r-1d2f490 r-1udh08x r-u8s1d r-h9hxbl r-417010'); // emoji
