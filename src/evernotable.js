@@ -32,8 +32,12 @@
     }
 
     function removeHashtag(){
-        var part = document.getElementById("react-root");
-        part.innerHTML = part.innerHTML.replace(/<a href="\/hashtag\/[^"]+"[^>]+>/gi, "");
+        var aList = document.querySelectorAll('a');
+        for (let i = 0; i < aList.length; i++) {
+            if (aList[i].innerText.match(/^#/)) {
+                aList[i].outerHTML = aList[i].innerText;
+            }
+        }
     }
 
     function integrateElements(){
@@ -71,7 +75,7 @@
     removeElements('css-1dbjc4n r-1loqt21 r-18u37iz r-1ny4l3l r-o7ynqc r-6416eg'); // reply
     removeElements('css-1dbjc4n r-1iusvr4 r-16y2uox r-1777fci r-1mi0q7o');  // private reply
     removeElements('css-18t94o4 css-1dbjc4n r-1ny4l3l r-1j3t67a r-o7ynqc r-6416eg'); // omitted reply
-    removeElements('css-1dbjc4n r-1ihkh82 r-1gm7m50 r-1867qdf r-1phboty r-rs99b7 r-18u37iz r-16y2uox r-1wtj0ep r-s1qlax r-1f1sjgu'); // reply restricted tweet
+    removeElements('css-1dbjc4n r-18u37iz r-1ut4w64 r-1ny4l3l r-1udh08x r-1qhn6m8 r-i023vh'); // reply restricted tweet
     removeElements('css-18t94o4 css-1dbjc4n r-16y2uox r-19u6a5r r-1ny4l3l r-m2pi6t r-oyd9sg r-o7ynqc r-6416eg'); // show reply
     removeElements('css-1dbjc4n r-18u37iz r-15zivkp'); // user link
     removeSvg(); // emoji
